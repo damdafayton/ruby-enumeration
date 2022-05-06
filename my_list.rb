@@ -2,20 +2,24 @@ require_relative './my_enumerable'
 
 class MyList
   include MyEnumerable
-  def initialize(*_args)
-    @list = list
+  def initialize(*args)
+    @list = args
   end
 
-  def each
+  def each(&block)
     @list.each(&block)
   end
 end
 
 # y = MyEnumerable.any?
-x = MyList.new(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
-x.each
-x.all? { |e| e <= 4 }
-x.all? { |e| e <= 2 }
-x.any? { |e| e == 2 }
-x.any? { |e| e == 5 }
-x.filter(&:even?)
+list = MyList.new(1, 2, 3, 4)
+# x.each
+list.all? { |e| e <= 4 }
+list.all? { |e| e <= 2 }
+list.any? { |e| e == 2 }
+list.any? { |e| e == 5 }
+list.filter(&:even?)
+list.filter(&:odd?)
+
+print list.filter(&:odd?)
+print list.filter(&:even?)
