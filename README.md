@@ -13,8 +13,8 @@
 To get the content of this project locally you need to run these commands in your terminal.
 Before starting the steps below, be sure you have [Git](https://www.linode.com/docs/guides/how-to-install-git-on-linux-mac-and-windows/).
 
-1. Download the `Zip` or clone it with `git clone https://github.com/damdafayton/ ruby-morse-code-decoder`
-2. `cd ruby-morse-code-decoder`
+1. Download the `Zip` or clone it with `git clone https://github.com/damdafayton/enumerable-module`
+2. `cd enumerable-module`
 
 ## Authors
 
