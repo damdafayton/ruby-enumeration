@@ -1,8 +1,8 @@
-# Decoder Morse Message
+# Enumerable module
 
 ## Description
 
-> This project is about a short program that helps users to decode any message coded or written from Morse to any Latin based language.
+> In this project we learned how to use a module inside your class using ruby programming language.
 
 ## Built With
 
