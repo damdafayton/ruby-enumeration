@@ -1,5 +1,3 @@
-# $LOAD_PATH << '.'
-
 require './MyEnumerable.rb'
 
 dummyLi=[1,2,3]
@@ -16,7 +14,6 @@ class MyList
   include MyEnumerable
 end
 
-# y = MyEnumerable.any?
 x = MyList.new(dummyLi)
 x.each
 x.all? {|e| e <= 4}
