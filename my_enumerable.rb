@@ -1,8 +1,7 @@
 module MyEnumerable
   def all?
-    response = false
+    response = true
     @list.each do |n|
-      response = true if yield(n)
       return false unless yield(n)
     end
     response
